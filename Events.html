@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <span class="webName">WS301</span>
+        <nav id="navbar">
+            <ul>
+                <li><a href="Home.html" class="nav-link">Home</a></li>
+                <li><a href="Events.html" class="nav-link">Events</a></li>
+                <li><a href="About.html" class="nav-link">About</a></li>
+            </ul>
+        </nav>
+        <button class="logoutBtn" id="logoutBtn" onclick="logoutBtn()">Logout</button>
+    </header>   
+    <main class="event-container">
+        <span>Upcoming Events</span>
+        <button class="addEventBtn" id="addEventBtn">Add Event</button>
+        <table id="eventsTable">
+            <thead>
+                <tr>
+                    <th>Event Name</th>
+                    <th>Date</th>
+                    <th>Location</th>
+                    <th>Descriptions</th>
+                    <th>Organizers</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Event rows will be dynamically added here -->
+            </tbody>
+        </table>
+    </main>
+</body>
+<script src="Script.js"></script>
+<script src="Events.js"></script>
+</html>

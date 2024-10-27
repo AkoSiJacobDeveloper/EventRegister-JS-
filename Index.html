@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main-container">
+        <div class="subject-container">
+            <h1>WS301</h1>
+            <p>Web Systems & Technologies</p>
+        </div>
+        <div class="login-container">
+            <div class="flip-container">
+                <div class="container login-content">
+                    <h1 class="login">Login</h1>
+                    <form id="login-form">
+                        <label for="email">EMAIL:</label>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="example@gmail.com">
+                        <label for="password">PASSWORD:</label>
+                        <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+                        <button type="button" class="loginBtn" onclick="login()">Login</button>
+                    </form>
+                    <div class="createContainer" id="createContainer">
+                        <p class="not-text">Not registered?</p>
+                        <a href="#" onclick="toggleFlip()">Create an account</a>
+                    </div>
+                </div>
+
+                <div class="container signup-content">
+                    <h1 class="login">Sign Up</h1>
+                    <form id="signup-form">
+                        <label for="new-email">EMAIL:</label>
+                        <input type="email" name="new-email" id="new-email" class="form-control newAcc" placeholder="example@gmail.com">
+                        <label for="new-password">PASSWORD:</label>
+                        <input type="password" name="new-password" id="new-password" class="form-control newAcc" placeholder="Password">
+                        <label for="confirm-password">CONFIRM PASSWORD:</label>
+                        <input type="password" name="confirm-password" id="confirm-password" class="form-control newAcc" placeholder="Confirm Password">
+                        <button type="button" class="loginBtn" onclick="signup()">Sign Up</button>
+                    </form>
+                    <div class="createContainer">
+                        <p class="not-text">Already have an account?</p>
+                        <a href="#" onclick="toggleFlip()">Login here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="Script.js"></script>
+</html>
